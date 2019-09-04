@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Business card app</string>
+    <string name="tanya_orlova">Tanya Orlova</string>
+    <string name="engineer_in_aircraft">Engineer in Aircraft</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="master_of_computer_science">Master of Computer Science</string>
+    <string name="description">Tanya has been doing Android development since 2015 to 2017 and since 2019 to next time.</string>
+    <string name="enter_a_message">Enter a message</string>
+    <string name="send_message">Send message</string>
+</resources>
