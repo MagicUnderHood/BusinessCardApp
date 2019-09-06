@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/photo" />
+        app:srcCompat="@drawable/photo"
+        tools:ignore="ContentDescription" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,7 +29,8 @@
             android:layout_marginTop="@dimen/margin_from_icon"
             android:layout_marginBottom="@dimen/margin_from_icon"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/aircraft" />
+            app:srcCompat="@drawable/aircraft"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -52,7 +54,8 @@
             android:layout_marginStart="@dimen/margin_edge"
             android:layout_marginTop="@dimen/margin_from_icon"
             android:layout_marginBottom="@dimen/margin_from_icon"
-            app:srcCompat="@drawable/android" />
+            app:srcCompat="@drawable/android"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -73,7 +76,8 @@
             android:layout_marginStart="@dimen/margin_edge"
             android:layout_marginTop="@dimen/margin_from_icon"
             android:layout_marginBottom="@dimen/margin_from_icon"
-            app:srcCompat="@drawable/master" />
+            app:srcCompat="@drawable/master"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -121,7 +125,8 @@
             android:layout_height="64dp"
             android:padding="@dimen/margin_standard"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/github_image" />
+            app:srcCompat="@drawable/github_image"
+            tools:ignore="ContentDescription" />
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -129,7 +134,8 @@
             android:layout_height="64dp"
             android:padding="@dimen/margin_standard"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/linkedin" />
+            app:srcCompat="@drawable/linkedin"
+            tools:ignore="ContentDescription" />
 
         <ImageButton
             android:id="@+id/imageButton3"
@@ -137,7 +143,8 @@
             android:layout_height="64dp"
             android:padding="@dimen/margin_standard"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/telegram_image" />
+            app:srcCompat="@drawable/telegram_image"
+            tools:ignore="ContentDescription" />
     </LinearLayout>
 
 
