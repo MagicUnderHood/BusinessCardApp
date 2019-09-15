@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Таня Орлова</string>
+    <string name="android_developer">Андроид разработчик</string>
+    <string name="chooseEmailClient">Выберите приложение для отправки:</string>
+    <string name="description">Занималась Андроид разработкой с 2015 года по 2017 и с 2019 по настоящее время.</string>
+    <string name="engineer_in_aircraft">Инженер в авиастроении</string>
+    <string name="enter_a_message">Введите сообщение</string>
+    <string name="master_of_computer_science">Магистр компьютерных наук</string>
+    <string name="send_message">Отправить сообщение</string>
+    <string name="messageSubject">Сообщение из приложения Визитная карточка</string>
+</resources>

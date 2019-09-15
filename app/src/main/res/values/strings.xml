@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Tanya Orlova</string>
-    <string name="tanya_orlova">Tanya Orlova</string>
     <string name="engineer_in_aircraft">Engineer in Aircraft</string>
     <string name="android_developer">Android Developer</string>
     <string name="master_of_computer_science">Master of Computer Science</string>
@@ -8,4 +7,5 @@
     <string name="enter_a_message">Enter a message</string>
     <string name="send_message">Send message</string>
     <string name="chooseEmailClient">Choose an Email client:</string>
+    <string name="messageSubject">Message from Business card app</string>
 </resources>

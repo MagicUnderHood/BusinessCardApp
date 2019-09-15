@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
                 "mailto", "tanya.orlova17@gmail.com", null
             )
         )
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Message from Business card app")
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.messageSubject))
         intent.putExtra(Intent.EXTRA_TEXT, messageTextView.text)
         startActivity(Intent.createChooser(intent, getString(R.string.chooseEmailClient)))
     }
