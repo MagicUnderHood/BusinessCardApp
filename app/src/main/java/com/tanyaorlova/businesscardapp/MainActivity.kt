@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
     private fun sendingMessage() {
         val intent = Intent(
             Intent.ACTION_SENDTO, Uri.fromParts(
-                "mailto", "tanya.orlova17@gmail.com", null
+                "mailto", "application@mail.com", null
             )
         )
         intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.messageSubject))
