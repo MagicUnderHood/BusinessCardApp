@@ -97,7 +97,6 @@
         android:layout_marginStart="@dimen/margin_edge"
         android:layout_marginTop="@dimen/margin_from_icon"
         android:layout_marginEnd="@dimen/margin_from_icon"
-        android:layout_marginRight="@dimen/margin_from_icon"
         android:layout_marginBottom="@dimen/margin_from_icon"
         android:text="@string/description"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -109,20 +108,17 @@
         android:id="@+id/editTextEnterMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_edge"
+        android:layout_marginEnd="@dimen/margin_from_icon"
         android:ems="10"
         android:hint="@string/enter_a_message"
-        android:inputType="textPersonName"
-        android:paddingStart="@dimen/margin_edge"
-        android:paddingTop="@dimen/margin_from_icon"
-        android:paddingEnd="@dimen/margin_from_icon"
-        android:paddingBottom="@dimen/margin_from_icon" />
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/bttnSendImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:alpha="100"
+        android:layout_gravity="end"
         android:background="#00FFFFFF"
         android:padding="@dimen/margin_from_icon"
         android:text="@string/send_message"
