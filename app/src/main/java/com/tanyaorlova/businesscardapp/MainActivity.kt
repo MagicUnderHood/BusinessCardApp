@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -27,42 +28,40 @@ class MainActivity : AppCompatActivity() {
         sendMessageButton.setOnClickListener { sendingMessage() }
 
         githubButton = findViewById(R.id.bttnGithub)
-        githubButton.setOnClickListener{openGithub()}
+        githubButton.setOnClickListener{ openLink(getString(R.string.my_github)) }
 
         linkedInButton = findViewById(R.id.bttnLinkedIn)
-        linkedInButton.setOnClickListener { openLinkedIn() }
+        linkedInButton.setOnClickListener { openLink(getString(R.string.my_linkedin)) }
 
         telegramButton = findViewById(R.id.bttnTelegram)
-        telegramButton.setOnClickListener { openTelegram() }
+        telegramButton.setOnClickListener { openLink(getString(R.string.my_telegram)) }
     }
 
-    private fun openTelegram() {
-        val uri = Uri.parse("https://t.me/TanyaOrlova")
+    private fun openLink(link: String){
+        val uri = Uri.parse(link)
         val intent = Intent(Intent.ACTION_VIEW, uri)
-        startActivity(intent)
-    }
-
-    private fun openLinkedIn() {
-        val uri = Uri.parse("https://www.linkedin.com/in/tanyaorlova/")
-        val intent = Intent(Intent.ACTION_VIEW, uri)
-        startActivity(intent)
-    }
-
-    private fun openGithub() {
-        val uri = Uri.parse("https://github.com/TanyaOrlova")
-        val intent = Intent(Intent.ACTION_VIEW, uri)
-        startActivity(intent)
+        if (intent.resolveActivity(packageManager) != null) {
+            startActivity(intent)
+        }
+        else{
+            Toast.makeText(this, R.string.error_no_link_app, Toast.LENGTH_LONG).show()
+        }
     }
 
     private fun sendingMessage() {
         val intent = Intent(
             Intent.ACTION_SENDTO, Uri.fromParts(
-                "mailto", "application@mail.com", null
+                "mailto", getString(R.string.email_address), null
             )
         )
         intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.messageSubject))
         intent.putExtra(Intent.EXTRA_TEXT, messageTextView.text)
-        startActivity(Intent.createChooser(intent, getString(R.string.chooseEmailClient)))
+        if (intent.resolveActivity(packageManager) != null){
+            startActivity(Intent.createChooser(intent, getString(R.string.chooseEmailClient)))
+        }
+        else{
+            Toast.makeText(this, R.string.error_no_email_app, Toast.LENGTH_LONG).show()
+        }
     }
 
 

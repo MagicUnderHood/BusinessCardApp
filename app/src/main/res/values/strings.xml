@@ -8,4 +8,10 @@
     <string name="send_message">Send message</string>
     <string name="chooseEmailClient">Choose an Email client:</string>
     <string name="messageSubject">Message from Business card app</string>
+    <string name="email_address" translatable="false">application@mail.com</string>
+    <string name="my_telegram" translatable="false">https://t.me/TanyaOrlova</string>
+    <string name="my_linkedin" translatable="false">https://www.linkedin.com/in/tanyaorlova/</string>
+    <string name="my_github" translatable="false">https://github.com/TanyaOrlova</string>
+    <string name="error_no_link_app">You haven`t open link app</string>
+    <string name="error_no_email_app">You haven`t email app</string>
 </resources>
