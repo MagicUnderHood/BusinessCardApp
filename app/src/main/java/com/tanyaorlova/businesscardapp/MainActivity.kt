@@ -4,9 +4,11 @@ import android.app.ActionBar
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.Gravity
 import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.marginEnd
 
 
 class MainActivity : AppCompatActivity() {
@@ -32,8 +34,12 @@ class MainActivity : AppCompatActivity() {
         telegramButton.setOnClickListener { openLink(getString(R.string.my_telegram)) }
 
         val disclaimerTextView = TextView(this)
-        disclaimerTextView.layoutParams = LinearLayout.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT)
+        disclaimerTextView.layoutParams =
+            LinearLayout.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.MATCH_PARENT)
         disclaimerTextView.text = getString(R.string.disclaimer)
+        disclaimerTextView.gravity = Gravity.END
+        disclaimerTextView.setPadding(0, 0, 16, 0)
         val activityLayout = findViewById<LinearLayout>(R.id.activity_layout)
         activityLayout.addView(disclaimerTextView)
     }
