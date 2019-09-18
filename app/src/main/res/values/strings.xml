@@ -14,4 +14,5 @@
     <string name="my_github" translatable="false">https://github.com/TanyaOrlova</string>
     <string name="error_no_link_app">You haven`t open link app</string>
     <string name="error_no_email_app">You haven`t email app</string>
+    <string name="disclaimer">© 2019 Tanya Orlova</string>
 </resources>

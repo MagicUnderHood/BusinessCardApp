@@ -1,21 +1,16 @@
 package com.tanyaorlova.businesscardapp
 
+import android.app.ActionBar
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.TextView
-import android.widget.Toast
+import android.view.ViewGroup
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var sendMessageButton: Button
-    private lateinit var githubButton: ImageButton
-    private lateinit var linkedInButton: ImageButton
-    private lateinit var telegramButton: ImageButton
     private lateinit var messageTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,17 +19,23 @@ class MainActivity : AppCompatActivity() {
 
         messageTextView = findViewById(R.id.editTextEnterMessage)
 
-        sendMessageButton = findViewById(R.id.bttnSendImage)
+        val sendMessageButton: Button = findViewById(R.id.bttnSendImage)
         sendMessageButton.setOnClickListener { sendingMessage() }
 
-        githubButton = findViewById(R.id.bttnGithub)
+        val githubButton: ImageButton = findViewById(R.id.bttnGithub)
         githubButton.setOnClickListener{ openLink(getString(R.string.my_github)) }
 
-        linkedInButton = findViewById(R.id.bttnLinkedIn)
+        val linkedInButton: ImageButton = findViewById(R.id.bttnLinkedIn)
         linkedInButton.setOnClickListener { openLink(getString(R.string.my_linkedin)) }
 
-        telegramButton = findViewById(R.id.bttnTelegram)
+        val telegramButton: ImageButton = findViewById(R.id.bttnTelegram)
         telegramButton.setOnClickListener { openLink(getString(R.string.my_telegram)) }
+
+        val disclaimerTextView = TextView(this)
+        disclaimerTextView.layoutParams = LinearLayout.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT)
+        disclaimerTextView.text = getString(R.string.disclaimer)
+        val activityLayout = findViewById<LinearLayout>(R.id.activity_layout)
+        activityLayout.addView(disclaimerTextView)
     }
 
     private fun openLink(link: String){

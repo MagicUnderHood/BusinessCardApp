@@ -2,9 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/imageAircraft"
+    android:id="@+id/activity_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:isScrollContainer="false"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -78,7 +80,7 @@
             android:layout_marginStart="@dimen/margin_edge"
             android:layout_marginTop="@dimen/margin_from_icon"
             android:layout_marginBottom="@dimen/margin_from_icon"
-            app:srcCompat="@drawable/master"
+            app:srcCompat="@mipmap/ic_master"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -111,6 +113,7 @@
         android:layout_marginStart="@dimen/margin_edge"
         android:layout_marginEnd="@dimen/margin_from_icon"
         android:ems="10"
+        android:focusableInTouchMode="true"
         android:hint="@string/enter_a_message"
         android:inputType="textPersonName" />
 
@@ -119,6 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/margin_from_icon"
         android:background="#00FFFFFF"
         android:padding="@dimen/margin_from_icon"
         android:text="@string/send_message"
@@ -149,7 +153,7 @@
             android:background="#00FFFFFF"
             android:padding="@dimen/margin_standard"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/linkedin"
+            app:srcCompat="@mipmap/ic_linkedin"
             tools:ignore="ContentDescription" />
 
         <ImageButton
@@ -160,7 +164,7 @@
             android:background="#00FFFFFF"
             android:padding="@dimen/margin_standard"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/telegram_image"
+            app:srcCompat="@mipmap/ic_telegram"
             tools:ignore="ContentDescription" />
     </LinearLayout>
 
