@@ -101,7 +101,14 @@
                     android:layout_marginStart="@dimen/margin_from_icon"
                     android:text="@string/master_of_computer_science" />
             </LinearLayout>
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"
+                android:layout_marginStart="@dimen/margin_edge"
+                android:layout_marginEnd="@dimen/margin_from_icon"
+                android:alpha="0.5"
+                />
             <TextView
                 android:id="@+id/txtDescription"
                 android:layout_width="wrap_content"
@@ -115,7 +122,13 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"
+                android:layout_marginStart="@dimen/margin_edge"
+                android:layout_marginEnd="@dimen/margin_from_icon"
+                />
             <EditText
                 android:id="@+id/editTextEnterMessage"
                 android:layout_width="match_parent"
