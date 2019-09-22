@@ -15,4 +15,6 @@
     <string name="error_no_link_app">You haven`t open link app</string>
     <string name="error_no_email_app">You haven`t email app</string>
     <string name="disclaimer">© 2019 Tanya Orlova</string>
+    <string name="title_activity_news_list" translatable="false">NY Times</string>
+    <string name="menu_action_switch">About</string>
 </resources>

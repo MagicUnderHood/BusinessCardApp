@@ -11,7 +11,7 @@
         android:id="@+id/activity_layout"
         android:focusableInTouchMode="true"
         android:isScrollContainer="false"
-        tools:context=".MainActivity">
+        tools:context=".AboutActivity">
 
         <ImageView
             android:id="@+id/imageViewPhoto"

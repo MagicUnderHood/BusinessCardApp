@@ -4,4 +4,5 @@
     <dimen name="margin_from_icon">8dp</dimen>
     <dimen name="margin_standard">16dp</dimen>
     <dimen name="margin_edge">50dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

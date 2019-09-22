@@ -12,4 +12,5 @@
     <string name="error_no_link_app">У Вас не установлено приложение для открытия ссылок</string>
     <string name="error_no_email_app">У Вас не установлено приложение для отправки писем</string>
     <string name="disclaimer">© 2019 Таня Орлова</string>
+    <string name="menu_action_switch">О NY Times</string>
 </resources>
